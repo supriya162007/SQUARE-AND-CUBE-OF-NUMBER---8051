@@ -1,4 +1,3 @@
-
 # SQUARE AND CUBE OF A NUMBER
 # 8051 Square  Program
 
@@ -17,19 +16,17 @@ To write and execute an Assembly language program for finding the square of a gi
 
 ## PROGRAM
 ```
-
-
-
-
-
-
-
-
-
+ORG 0000H
+MOV A, P0
+MOV R0, A
+MOV B, R0
+MUL AB
+MOV P2, A
+SJMP $
+END
 ```
-
 ## OUTPUT
-
+<img width="1260" height="700" alt="image" src="https://github.com/user-attachments/assets/a638343f-fe7b-43b1-be38-83a08993d33d" />
 
 ## RESULT
 Thus, the square of the given data is calculated using 8051 Keil.
@@ -51,18 +48,19 @@ To write and execute an Assembly language program for finding the cube of a give
 
 ## PROGRAM
 ```
-
-
-
-
-
-
-
-
+ORG 0000H
+MOV A, P0
+MOV B, A
+MUL AB
+MOV R0, P0
+MOV B, R0
+MUL AB
+MOV P2, A
+SJMP $
+END
 ```
-
-
 ## OUTPUT
+<img width="1260" height="700" alt="image" src="https://github.com/user-attachments/assets/ea3c258e-5ae4-41ca-8d83-1f05c23dded0" />
 
 ## RESULT
 Thus, the cube of the given data is calculated using 8051 Keil.
